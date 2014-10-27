@@ -25,7 +25,7 @@ if err != MPG123_OK:
 
 # Open MP3 file
 
-err = mh.mpg123_open("/media/server_main/Simon/Temp/TestData/Audio.mp3")
+err = mh.mpg123_open(Filename)
 if err != MPG123_OK:
   echo("mpg123_open() failed: " & $mpg123_plain_strerror(err))
   quit(-1)
